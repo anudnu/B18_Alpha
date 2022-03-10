@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-selection-list [multiple]="false">
+      <!-- <div class="active"> -->
+        <mat-list-option [style.background-color]="selectedTab==''?'yellow':'grey'"  (click)="filter('')"><a>All Categories</a></mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [style.background-color]="selectedTab=='Biography'?'orange':'grey'"  (click)="filter('Biography')"><a>Biography</a></mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [style.background-color]="selectedTab=='Fantasy'?'orange':'grey'" (click)="filter('Fantasy')">Fantasy</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [style.background-color]="selectedTab=='Fiction'?'orange':'grey'" (click)="filter('Fiction')">Fiction</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [style.background-color]="selectedTab=='Mystery'?'orange':'grey'"(click)="filter('Mystery')">Mystery</mat-list-option>
+        <mat-divider></mat-divider>
+        <mat-list-option [style.background-color]="selectedTab=='Romance'?'orange':'grey'" (click)="filter('Romance')">Romance</mat-list-option>
+      <!-- </div> -->
+      </mat-selection-list>   
+</mat-card>
